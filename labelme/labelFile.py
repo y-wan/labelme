@@ -39,11 +39,11 @@ class LabelFile(object):
 
     def load(self, filename):
         try:
-            with open(filename, 'rb') as f:
+            with open(filename, 'r') as f:
                 data = json.load(f)
                 imagePath = data['imagePath']
                 if six.PY3:
-                    imageData = b64decode(data['imageData']).decode('utf-8')
+                    imageData = b64decode(bytes(data['imageData'], 'utf-8'))
                 elif six.PY2:
                     imageData = b64decode(data['imageData'])
                 else:
@@ -64,9 +64,9 @@ class LabelFile(object):
     def save(self, filename, shapes, imagePath, imageData,
             lineColor=None, fillColor=None):
         try:
-            with open(filename, 'wb') as f:
+            with open(filename, 'w') as f:
                 if six.PY3:
-                    imageData = b64encode(imageData.encode('utf-8'))
+                    imageData = str(b64encode(imageData), 'utf-8')
                 elif six.PY2:
                     imageData = b64encode(imageData)
                 else:
