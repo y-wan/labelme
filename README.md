@@ -23,6 +23,7 @@ It is written in Python and uses Qt for its graphical interface.
 - 系统上已安装Python：推荐Python3，通过[https://www.python.org/](https://www.python.org/)下载安装；也可以直接点下面对应的链接下载安装
     - Windows: [Python3](https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe) / [Python2](https://www.python.org/ftp/python/2.7.14/python-2.7.14.msi)
     - Mac OS X 64位: [Python3](https://www.python.org/ftp/python/3.6.4/python-3.6.4-macosx10.6.pkg) / [Python2](https://www.python.org/ftp/python/2.7.14/python-2.7.14-macosx10.6.pkg)
+    - 注意：请在初始安装界面勾选Add Python x.x to Path，并使用默认方式安装，以避免后续步骤中不必要的麻烦。
 - 已安装Python库：PyQt4 / PyQt5（推荐PyQt5）
     - 在Python3.5+的64-bit Linux, macOS, 32-bit / 64-bit Windows上可以直接通过命令行的`pip3 install pyqt5`安装PyQt5
     - 其他方式安装PyQt5请参见https://www.riverbankcomputing.com/software/pyqt/download5
