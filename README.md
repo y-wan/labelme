@@ -32,7 +32,7 @@ It is written in Python and uses Qt for its graphical interface.
 1. clone这个仓库，或者依次点击页面右上方的Clone or Download->Download ZIP并解压下载的ZIP文件。
 2. 通过命令行（Windows下可通过Ctrl+R组合键打开“运行”窗口，输入`cmd`后回车，以打开命令行窗口）安装上一步得到的labelme文件夹，例如：
 ```shell
-cd labelme  # 切换目录到上一部得到的labelme文件夹内
+cd labelme  # 切换目录到上一步得到的labelme文件夹内
 pip3 install .  # 通过python3的pip工具安装labelme
 ```
 
